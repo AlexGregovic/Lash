@@ -18,6 +18,8 @@
 </head>
 <body>
 
+    <header></header>
+
     <nav class="sidebar">
         <div class="logo-menu">
             <h2></h2>
@@ -26,25 +28,25 @@
 
         <ul class="list">
             <li class="list-item">
-                <a href="#">
+                <a href="#home">
                     <i class="bx bx-grid-alt"></i>
-                    <span class="link-name" style="--i:1;">Dashboard</span>
+                    <span class="link-name" style="--i:1;">Pocetna</span>
                 </a>
             </li>
             <li class="list-item">
-                <a href="#">
+                <a href="#edukacija">
                     <i class='bx bx-objects-vertical-top' ></i>
-                    <span class="link-name" style="--i:2;">Edukacija</span>
+                    <span class="link-name" style="--i:2;">Agenda</span>
                 </a>
             </li>
             <li class="list-item">
-                <a href="#">
+                <a href="#contact">
                     <i class='bx bx-user' ></i>
                     <span class="link-name" style="--i:3;">Kontakt</span>
                 </a>
             </li>
             <li class="list-item">
-                <a href="#">
+                <a href="#testimonials">
                     <i class='bx bxs-user-pin' ></i>
                     <span class="link-name" style="--i:4;">Lokacija</span>
                 </a>
@@ -78,19 +80,19 @@
             <div id="countdown-clock" class="countdown-container">
                 <div class="countdown-item" id="days">
                     <span id="daysnumber">00</span>
-                    <span>Days</span>
+                    <span>Dana</span>
                 </div>
                 <div class="countdown-item" id="hours">
                     <span>00</span>
-                    <span>Hours</span>
+                    <span>Sati</span>
                 </div>
                 <div class="countdown-item" id="minutes">
                     <span>00</span>
-                    <span>Minutes</span>
+                    <span>Minuta</span>
                 </div>
                 <div class="countdown-item" id="seconds">
                     <span>00</span>
-                    <span>Seconds</span>
+                    <span>Sekunde</span>
                 </div>
             </div>
         </section>
@@ -107,14 +109,10 @@
 
     <section class="homes flex-center" id="homes">
         <div class="home-container">
-            <div class="media-icons">
-                <a href="https://github.com/AlexGregovic"><i class="fa-regular fa-envelope"></i></a>
-                <a href="https://www.instagram.com/walldecor_studio_201/"><i class="fab fa-instagram"></i></a>
-                <a href="https://rs.linkedin.com/in/aleksandar-gregovic-57789a1b5"><i class="fab fa-facebook"></i></a>
-            </div>
+            
             <div class="info">
                 <hr>
-                <h2>Zasto Edukacija ?</h2>
+                <h2>Zasto?</h2>
                 <hr>
                 <br>
                 <br>
@@ -144,7 +142,7 @@
                     <hr> prikaz rada na modelu ruski volumen - edukator Ema Božanić</p>
                     
                     Prezentacija radova učenika i interakcija, ukazivanje na greške u radu.</p>
-                <a href="" class="btn">Contact Me <i class="fas fa-arrow-circle-right"></i></a>
+                <a href="#contact" class="btn">Prijavi Se <i class="fas fa-arrow-circle-right"></i></a>
             </div>
             <div class="home-img">
                 
@@ -154,7 +152,7 @@
     </section>
 
 <section>
-    <img src="ema.jpg" alt="">
+    <div class="home_banner"><img src="ema.jpg" alt=""></div>
     <div class="container flex-center">
         <h3>Jelena i Emilija Božanić</h3>
         <p>Profesionalni lash artisti, svetski priznati, ABT akreditovani edukatori i osnivači brenda BRUSH & LASH. 
@@ -165,22 +163,27 @@
 </section>
 
 <section>
-    <img src="ana.jpg" alt="">
+    <div class="home_banner"><img src="ana.jpg" alt=""></div>
     <div class="container flex-center">
-        <h1 class="section-title-01">Edukacija</h1>
-        <h2 class="section-itle-02">Edukacija</h2>
+        <div class="media-icons">
+            
+            <a href="https://www.instagram.com/hello_beauty_bg/"><i class="fab fa-instagram"></i></a>
+            
+        </div>
+        <h3>Ana Djordjevic</h3>
         <div class="content">
             <p>Ana Đordjević je osnivač i vlasnik salona Hello Beauty. Pre 5 godina našem timu se pridružila Mirjana Vujičić, menadzer salona. Koja svojim inspirativnim duhom i idejama unosi originalnost i kreira nove trendove za naš salon. Preko 10 godina u beauty industriji i zajedno broje preko 15000 zadovoljnih klijenata. Trudimo se da našim učenicima prenesemo maksimalno znanje, svoje iskustvo, kao i konstantnu podršku kasnije tokom rada. Svaka od naših zaposlenih je prošla detaljnu obuku i vežbu u trajanju od par meseci pre puštanja u rad, a trenutno imamo 10 lash artista. 
                 Odlikuje ih izuzetan profesionalizam, ali, pre svega kvalitet  usluga.
                 Svi su jedinstveni i posebni, jer svaka uspešna osoba možda  liči jedna na drugu, ali je do uspeha svaka stigla na svoj način.</p>
-                <div>
-                    <p>Pohadjanjem masterklasa naučicete:</p>
+                <div class="sale">
+                    <h4>Pohadjanjem masterklasa naučicete:</h4>
                     <ul>
-                        <li>kako da razvijete i održite svoj biznis *kako da uspesno gradite salon i svoj brend od samog početka.</li>
+                        <li>kako da razvijete i održite svoj biznis </li>
+                        <li>kako da uspesno gradite salon i svoj brend od samog početka.</li>
                         <li>koje greške da izbegavate</li>
                         <li>kako da izaberete, obučite i zadržite prave zaposlene.</li>
                     </ul>
-                    <p>Takodje, podelićemo sa vama i:</p>
+                    <h4>Takodje, podelićemo sa vama i:</h4>
                     <ul>
                         <li>kako da izgradite bazu klijenata</li>
                         <li>kako da uspešno promovišete svoje proizvode i usluge.</li>
@@ -230,7 +233,7 @@
                         Benefiti koje možete koristiti na samom početku biznisa 
                     </li>
                     <li>
-                        ⁠Kako formirati bazu klijenata
+                        Kako formirati bazu klijenata
                     </li>
                 </ul>
                     </li>
@@ -274,7 +277,7 @@
     </section>
 
     
-    <div class="ml-embedded" data-form="QjntPQ"></div>
+    <div class="ml-embedded" id="contact" data-form="QjntPQ"></div>
 
     <!-- Footer Section -->
     <footer>
@@ -283,14 +286,14 @@
 
     <!-- Add your JavaScript scripts here if needed -->
     <script src="script.js"></script>
-    <!-- MailerLite Universal -->
-<script>
-    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-    ml('account', '822061');
-</script>
-<!-- End MailerLite Universal -->
+   <!-- MailerLite Universal -->
+    <script>
+        (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+        .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+        n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+        (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+        ml('account', '822061');
+    </script>
+    <!-- End MailerLite Universal -->
 </body>
 </html>
