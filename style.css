@@ -296,7 +296,7 @@ box-shadow: 2px -11px 15px -7px rgba(187,161,128,1);
     display: grid;
     grid-template-columns: repeat(4,1fr);
     width: 100%;
-    gap: 20px;
+    gap: 10px;
     padding: 0 30px;
     justify-content: center; /* Adjust spacing between items */
     align-items: center;
