@@ -256,8 +256,9 @@ background: rgba(255, 255, 255, 0);
 
 #home .hero .cta-button {
     display: inline-block;
-    background-color: #e6ded7;
-    color: #050505b0;
+    background: rgb(246,246,246);
+background: radial-gradient(circle, rgba(246,246,246,1) 0%, rgb(114, 114, 114) 100%);
+    color: #000000;
     padding: 15px 30px;
     font-size: 1.2em;
     font-weight: bold;
@@ -449,25 +450,29 @@ box-shadow: 2px -11px 15px -7px rgba(187,161,128,1);
 }
 .home-container .info {
     padding: 60px;
+    font-size: 17px;
 }
 .home-container .info h2{
-    margin-left: 20%;
+    margin-left: 30%;
     font-size: 4em;
     font-weight: 600;
     line-height: 70px;
+    
 }
 
 .home-container .info h3{
     color: var(--third-color);
+    font-size: 30px;
     font-feature-settings: 1.3em;
     font-weight: 600;
     line-height: 50px;
-    margin-left: 20%;
+    margin-left: 25%;
+    padding: 3%;
 }
 
 .home-container .info p{
     color: rgb(255, 255, 255);
-    font-size: 16px;
+    font-size: 22px;
     max-width: 350px;
     background: #333;
 }
@@ -572,6 +577,7 @@ box-shadow: 2px -11px 15px -7px rgba(187,161,128,1);
 }*/
 .container p {
     margin:10px 60px 10px 60px;
+    font-size: 18px;
 }
 .container .content .sale {
     background: rgba(230, 230, 230, 0.623);
@@ -626,6 +632,16 @@ box-shadow: 2px -11px 15px -7px rgba(187,161,128,1);
 
 .price h3 {
     padding: 20px;
+    text-align: center;
+}
+.price h2 {
+    border-style: solid;
+    border-color: red;
+    background: #646464;
+    color: #000000;
+    height: 70px;
+    padding: 15px;
+    text-align: center;
 }
 
 /* Contact Section */
@@ -676,6 +692,16 @@ box-shadow: 2px -11px 15px -7px rgba(187,161,128,1);
     background-color: #e573b9c5;
 }
 
+
+.lastemail h3 {
+    text-align: center;
+}
+
+.lastemail p {
+    text-align: center;
+    font-size: 20px;
+}
+
 /* Footer Section */
 footer {
     background-color: #333;
@@ -712,6 +738,10 @@ footer p {
         margin-top: 7.5%;
     }
 
+    .student {
+        margin-top: 20px;
+    }
+
     #home {
         padding: 0; /* Add some padding to the home section to make it fit on the screen */
         display: flex;
@@ -724,7 +754,7 @@ footer p {
       }
     
       #home p {
-        font-size: 18px; /* Reduce the font size of paragraphs */
+        font-size: 20px; /* Reduce the font size of paragraphs */
         margin-bottom: 20px;
       }
     
@@ -778,7 +808,7 @@ footer p {
     
       .home-container .info h3 {
         
-        font-size: 1em; /* Reduce the font size of the home section subtitle */
+        font-size: 1.5em; /* Reduce the font size of the home section subtitle */
       }
     
       .btn {
