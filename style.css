@@ -1,4 +1,4 @@
-/*prva promena*/
+
 
 
 
@@ -62,10 +62,12 @@ body {
     bottom: 0;
     left: 0;
     width: 15%;
-    height: 100%;
+    height: 35%;
     padding: 6px 10px;
     transition: 0.5s;
     z-index: 1;
+    background-color: #d6d6d625;
+    border-radius: 0 0 15px 0;
 }
 
 
@@ -102,11 +104,12 @@ background: rgba(255, 255, 255, 0);
     transform: translateX(-50%);
     width: 50px;
     height: 50px;
-    background: rgba(250, 128, 114, 0);
+    background: rgb(105 105 105 / 82%);
     font-size: 40px;
     color: #3b3b3b;
     text-align: center;
     line-height: 40px;
+    border-radius: 5px;
 }
 
 .sidebar.active .logo-menu .toggle-btn {
@@ -180,7 +183,7 @@ background: rgba(255, 255, 255, 0);
     transform: translate(-50%, -50%);
     width: 30px;
     height: 4px;
-    background-color: #3b3b3b;
+    background-color: #cccccc;
     transition: transform 0.5s ease;
 }
 
@@ -251,9 +254,9 @@ background: rgba(255, 255, 255, 0);
     margin-bottom: 20px;
 }
 
-#home .cta-button {
+#home .hero .cta-button {
     display: inline-block;
-    background-color: #f57d9c;
+    background-color: #e6ded7;
     color: #050505b0;
     padding: 15px 30px;
     font-size: 1.2em;
@@ -263,8 +266,8 @@ background: rgba(255, 255, 255, 0);
     transition: background-color 0.3s ease;
 }
 
-#home .cta-button:hover {
-    background-color: rgba(152, 30, 156, 0.733);
+#home .hero .cta-button:hover {
+    background-color: #d8c7b8;
     color: #ffffff;
 }
 
@@ -428,14 +431,14 @@ box-shadow: 2px -11px 15px -7px rgba(187,161,128,1);
     width: 100%;
 }
 
-.home-container .media-icons{
+.media-icons{
     display: flex;
     flex-direction: column;
     margin-right: 40px;
     
 }
 
-.home-container .media-icons a{
+ .media-icons a{
     color: var(--second-color);
     font-size: 1.5em;
     margin: 10px 0;
@@ -444,7 +447,9 @@ box-shadow: 2px -11px 15px -7px rgba(187,161,128,1);
 .home-container .media-icons a:hover{
     color: rgba(128, 128, 128, 0.781);
 }
-
+.home-container .info {
+    padding: 60px;
+}
 .home-container .info h2{
     margin-left: 20%;
     font-size: 4em;
@@ -461,10 +466,10 @@ box-shadow: 2px -11px 15px -7px rgba(187,161,128,1);
 }
 
 .home-container .info p{
-    color: var(--third-color);
-    font-size: var(--normal-font-size);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
     max-width: 350px;
-    margin-left: 20%;
+    background: #333;
 }
 
 .btn{
@@ -565,7 +570,13 @@ box-shadow: 2px -11px 15px -7px rgba(187,161,128,1);
 .portfolio-item img:hover {
     transform: scale(1.05);
 }*/
-
+.container p {
+    margin:10px 60px 10px 60px;
+}
+.container .content .sale {
+    background: rgba(230, 230, 230, 0.623);
+    padding: 60px;
+}
 /* Testimonials Section */
 #testimonials {
     padding: 100px 0;

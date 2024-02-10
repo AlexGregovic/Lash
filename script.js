@@ -4,31 +4,20 @@
 
 
 // Function for smooth scrolling
-
-
 function smoothScroll(event) {
-    event.preventDefault();
-    console.log(event.target);
-    if(!event.target.getAttribute("href")){
-        var elmnt = event.target.closest("[href]");
-    }
-    else {
-        var elmnt = event.target;
-    }
-    const targetId = elmnt.getAttribute("href");
-    if(targetId != "#"){
-        var targetSection = document.querySelector(targetId);
-    }
-    else {
-        var targetSection = document.querySelector("html");
-    }
-    const headerHeight = document.querySelector("header").offsetHeight;
-    const offsetTop = targetSection.offsetTop - headerHeight;
+    const targetId = event.target.getAttribute("href");
+    if (targetId && targetId !== "#") {
+        const targetSection = document.querySelector(targetId);
+        const headerHeight = document.querySelector("header").offsetHeight;
+        const offsetTop = targetSection.offsetTop - headerHeight;
 
-    window.scroll({
-        top: offsetTop,
-        behavior: "smooth",
-    });
+        window.scroll({
+            top: offsetTop,
+            behavior: "smooth",
+            duration: 10000 // Adjust the duration here (in milliseconds)
+        });
+        event.preventDefault(); // Prevent default behavior only for navigation links
+    }
 }
 
 // Add smooth scrolling to navigation links
@@ -39,10 +28,18 @@ navLinks.forEach((link) => {
 
 // Add smooth scrolling to CTA button
 const ctaButton = document.querySelector(".cta-button");
-ctaButton.addEventListener("click", smoothScroll);
+ctaButton.addEventListener("click", (event) => {
+    smoothScroll(event);
+});
+
+// Add smooth scrolling to hero button
+const heroButton = document.querySelector(".hero .cta-button");
+heroButton.addEventListener("click", (event) => {
+    smoothScroll(event);
+});
 
 // Add countdown functionality
-const countdownDate = new Date("February 28, 2024 00:00:00").getTime();
+const countdownDate = new Date("April 14, 2024 00:10:00").getTime();
 const countdownClock = setInterval(function() {
     const now = new Date().getTime();
     const distance = countdownDate - now;
@@ -77,7 +74,7 @@ ScrollReveal({
 ScrollReveal().reveal(".homes .info h2", { delay: 500, origin: "left" });
 ScrollReveal().reveal(".homes .info h3, .homes .info p, .about-info .btn", { delay: 600, origin: "right" });
 ScrollReveal().reveal(".homes .info .btn", { delay: 700, origin: "bottom" });
-
+ScrollReveal().reveal(".container h3", { delay: 500, origin: "left" });
 // Portfolio modal functionality
 const portfolioModals = document.querySelectorAll(".portfolio-model");
 const imgCards = document.querySelectorAll(".img-card");
