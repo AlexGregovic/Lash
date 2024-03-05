@@ -702,6 +702,23 @@ box-shadow: 2px -11px 15px -7px rgba(187,161,128,1);
     font-size: 20px;
 }
 
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+.video-container video {
+    max-width: 100%;
+    height: auto;
+}
+
+.video-text {
+    text-align: center;
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
 /* Footer Section */
 footer {
     background-color: #333;
@@ -714,6 +731,10 @@ footer p {
     font-size: 14px;
 }
 
+footer p a {
+    color: whitesmoke;
+    font-size: 20px;
+}
 /* Add any additional CSS styles and adjustments as needed */
 @media (max-width: 768px) {
     
