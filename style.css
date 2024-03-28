@@ -852,3 +852,40 @@ footer p a {
         height: 60vh;
     }
 }
+
+.popup {
+    position: fixed;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 0, 0, 0.555);
+    color: rgb(255, 255, 255);
+    font-size: large;
+    text-align: center;
+    padding: 22px;
+    border-radius: 10px;
+    animation: fadeIn 2s ease forwards, fadeOut 5s ease-out 2s forwards;
+    z-index: 6;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 2;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 2;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.hidden {
+    display: none;
+}

@@ -107,3 +107,24 @@ document.addEventListener('DOMContentLoaded', function () {
         sidebar.classList.toggle('active');
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Show pop-up after 1 second
+    setTimeout(showPopup, 1000);
+
+    const toggleBtn = document.querySelector('.toggle-btn');
+    const sidebar = document.querySelector('.sidebar');
+
+    toggleBtn.addEventListener('click', function () {
+        sidebar.classList.toggle('active');
+    });
+});
+
+function showPopup() {
+    const popup = document.getElementById('popup');
+    popup.classList.remove('hidden');
+    // Hide pop-up after 4 seconds
+    setTimeout(function () {
+        popup.classList.add('hidden');
+    }, 4000);
+}
